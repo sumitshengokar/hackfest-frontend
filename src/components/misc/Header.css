@@ -1,7 +1,7 @@
 header{
     color: white;
     background: #37387a;
-    background-image: url('../../images/space.jpg');
+    background-image: url('../../images/hackfest-img-1.jpg');
     min-height: 50vh;
     padding-top: 20vh;
     text-align: center;
@@ -13,6 +13,9 @@ header{
     background-size: cover; /* Resize the background image to cover the entire container */
 }
   
+.bg-container{
+    color: #9e0f0f;
+}
 header h1{
     font-size: 3rem;
     margin: 0 0 1rem;
