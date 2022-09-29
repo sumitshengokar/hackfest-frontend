@@ -1,0 +1,25 @@
+
+  
+  .container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  pre {
+    width: 70%;
+    color: #fff;
+    font-size: larger;
+  }
+  
+  button {
+    background: #0563b4 !important;
+  }
+  p {
+    color: red;
+  }

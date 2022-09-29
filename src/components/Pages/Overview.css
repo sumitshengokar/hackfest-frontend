@@ -1,0 +1,16 @@
+.form input[type="file"]{
+    z-index: 999;
+    line-height: 0;
+    width: 100vh;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    _cursor: hand;
+    margin: 0;
+    padding:0;
+    left:0;
+    }
+
+    
