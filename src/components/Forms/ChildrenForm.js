@@ -26,6 +26,33 @@ function ChildrenForm() {
       const { name, value } = e.target;
       setFormValues({ ...formValues, [name]: value });
     };
+
+    // const handleClick=async(e)=>{
+    //   e.preventDefault();
+    //   let obj={
+    //     "firstName":initialValues.firstName,
+    //     "lastName":initialValues.lastName,
+    //     "dateOfBirth":initialValues.dob,
+    //     "gender":initialValues.gender,
+    //     "schoolName":"default",
+    //     "education":initialValues.education,
+    //     "disability":initialValues.disability
+
+    //   }
+
+    //   const url = "https://teamhustlers-student-service.azuremicroservices.io/api/v1/students";
+    //   const response = await axios.post(url,obj)
+    //     .then((res)=>{
+    //       console.log("got",res)
+
+    //     })
+    //     .catch((error) => {
+    //       console.error(error)
+    //     })
+    //    };
+    //    console.log("response",response);
+
+    // }
   
     const handleSubmit = async(e) => {
       e.preventDefault();
@@ -42,23 +69,28 @@ function ChildrenForm() {
 
       }
 
-      // const response = await axios.post("https://teamhustlers-student-service.azuremicroservices.io/api/v1/students",obj,{
-      //   headers: {
-      //     "Access-Control-Allow-Origin": '*', //the token is a variable which holds the token
-      //     "Access-Control-Allow-Methods":"DELETE, POST, GET, OPTIONS",
-      //     "Access-Control-Allow-Headers":"Content-Type, Authorization, X-Requested-With"
-      //   },
-      //   mode:"cors"
+      // const url = "https://teamhustlers-student-service.azuremicroservices.io/api/v1/students";
+      // const response = await axios.post(url,obj)
+      //   .then((res)=>{
+      //     console.log("got",res)
+
+      //   })
+      //   .catch((error) => {
+      //     console.error(error)
+      //   })
       //  });
       // console.log(response);
-      fetch("https://teamhustlers-student-service.azuremicroservices.io/api/v1/students",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(obj)
 
-  }).then(()=>{
-    console.log("New User added")
-  })
+      
+      
+  //     fetch("https://teamhustlers-student-service.azuremicroservices.io/api/v1/students",{
+  //     method:"POST",
+  //     headers:{"Content-Type":"application/json"},
+  //     body:JSON.stringify(obj)
+
+  // }).then(()=>{
+  //   console.log("New User added")
+  // })
     };
   
     useEffect(() => {
@@ -89,7 +121,7 @@ function ChildrenForm() {
         errors.gender = "Gender is required!";
       }
       if (!values.mobile) {
-        errors.mobile = "Password is required";
+        errors.mobile = "Mobilr is required";
       } else if (values.mobile.length < 10) {
         errors.mobile = "Mobile must be of 10 characters";
       } else if (values.mobile.length > 10) {
@@ -274,7 +306,7 @@ function ChildrenForm() {
               </Grid> */}
             </Grid>
             <br></br>
-            <button style={{justifyContent:'center'}} className="fluid ui button blue">Submit</button>
+            <button style={{justifyContent:'center'}}  className="fluid ui button blue">Submit</button>
          
         </form>
       </div>

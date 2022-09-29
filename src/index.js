@@ -18,6 +18,7 @@ import ChildrenForm from './components/Forms/ChildrenForm';
 import CorporateForm from './components/Forms/CorporateForm';
 import Register from './components/Forms/Register';
 import PaymentForm from './components/Forms/PaymentForm';
+import SimpleForm from './components/Forms/SimpleForm';
 // import { Home } from '@mui/icons-material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +27,7 @@ root.render(
     <Routes>
       {/* <Route exact path='/' element={<Home />}></Route> */}
       <Route path='/' element={<Home/>} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/login' element={<SimpleForm />} />
       <Route path='/register' element={<PaymentForm />} />
       
       <Route path='/admin' element={<App />} >
